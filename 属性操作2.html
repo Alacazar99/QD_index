@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+     div{
+     	width: 500px;
+     	line-height: 100px;
+     	border: solid 1px gray; 
+     	font-size: 5px;
+     }
+	</style>
+	<script type="text/javascript">
+		 window.onload=function(){
+
+		 	big=document.getElementById("big");
+		 	small = document.getElementById('small');
+		 	div=document.getElementById("txt");
+		 	div.style.fontSize="5px";
+           
+            var num=div.style.fontSize;
+           
+		 	big.onclick=function(){
+		 		num=parseInt(num)+10;
+		 		
+		 		div.style.fontSize=num+"px";
+		 	}
+		 	small.onclick = function(){
+		 		num = parseInt(num) - 5;
+
+		 		div.style.fontSize = num + "px";
+		 	}
+		 }
+
+
+	</script>
+</head>
+<body style="text-align: center;">
+
+	<div id="txt" style="text-align: center; color: rgb(222,1,1)">
+	  我和我的祖国
+	</div>
+	<p style="text-align: center;">
+		<button id="big">big!</button>
+	    <button id="small">小！小！小！</button>
+	</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+      div{
+      	width: 300px;
+      	height: 300px;
+      	border: solid 1px black;
+      	background-color: lightgray;
+      }
+
+	</style>
+	<script type="text/javascript">
+		
+		window.onload=function(){
+
+			var box=document.getElementById("box");
+            var name=document.getElementById("name");
+            var txt=document.getElementById("txt");
+            var btn=document.getElementById("btn");
+
+            btn.onclick=function(){
+            	var str=txt.value;
+            	//获取span的文本内容
+            	var spanTxt=name.innerText;
+            	box.innerHTML+=spanTxt+str+"<br/>";
+            	txt.value='';
+            }
+		}
+	</script>
+</head>
+<body>
+	<div id="box">
+	</div>
+	<span id="name">张三说:</span>
+	<input type="text" name="txt" id="txt"></input>
+	<button id="btn">提交</button>
+</body>
+</html>

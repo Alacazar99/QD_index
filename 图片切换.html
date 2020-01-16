@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		
+		window.onload=function(){
+			var btn= document.getElementById("btn");
+			var img= document.getElementById("pic");
+
+			var num=2;
+
+			btn.onclick = function(){
+				if(num>6)
+					num=1;
+				img.src="img/56"+num+".jpg";
+				num++;
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+	
+	<img  id="pic" src="img/561.jpg">
+	<button id="btn">切换</button>
+</body>
+</html>

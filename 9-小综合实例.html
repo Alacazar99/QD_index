@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>评论框</title>
+<style>
+	#div1 {
+		margin: 0 auto;
+		width:240px;
+		 height:200px; 
+		 border:1px solid #333;
+		 background:#f1f1f1; padding:30px; 
+		 overflow: scroll;
+	}
+	#zhangsan{
+		display: table;
+		margin: 0 auto;
+      }
+      #lisi{
+		display: table;
+		margin: 0 auto;
+      }
+
+</style>
+<script>
+window.onload = function (){
+	var oDiv = document.getElementById('div1');
+	var oStrong = document.getElementById('strong1');
+	var oText = document.getElementById('text1');
+	var oBtn = document.getElementById('btn1');
+	
+
+	var oStrong2 = document.getElementById('strong2');
+	var oText2 = document.getElementById('text2');
+	var oBtn2 = document.getElementById('btn2');
+
+	oBtn.onclick = function (){
+		// 原来的内容，你得给我留着，然后再加上新内容
+		// a = a + b
+		// a += b
+		
+		// 添加：+=
+		// oDiv.innerHTML = oDiv.innerHTML + oText.value + '<br />';
+		oDiv.innerHTML += oStrong.innerHTML + oText.value + '<br />';
+		oText.value = '';
+		
+	};
+	oBtn2.onclick = function(){
+		oDiv.innerHTML += oStrong2.innerHTML + oText2.value + "<br />";
+		oText2.value = '';
+	}
+};
+
+
+</script>
+</head>
+
+<body>
+
+	<div id="div1"></div>
+
+	<div id = "zhangsan">
+		<strong id="strong1">张三：</strong>
+		<input id="text1" type="text"  />
+		<input id="btn1" type="button" value="提交" />
+	</div>
+
+	<div id = "lisi">
+		<strong id="strong2">李四：</strong>
+		<input id="text2" type="text"  />
+		<input id="btn2" type="button" value="提交" />
+	</div>
+</body>
+</html>

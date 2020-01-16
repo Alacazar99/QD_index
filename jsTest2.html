@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <style type="text/css">
+        #txt{
+            height: 50px;
+            width: 200px;
+        }
+    </style>
+	<script type="text/javascript">
+		
+        window.onload=function(){
+        	txt=document.getElementById("txt");
+        	
+        	//鼠标悬停事件
+        	txt.onmouseover=function(){
+        		txt.value="你来抓我呀！！！";
+        	}
+            //鼠标按下事件
+        	txt.onmousedown=function(){
+        		txt.value="抓住你啦！！";
+        	}
+        	//鼠标放开事件
+        	txt.onmouseup=function(){
+        		txt.value="啦啦啦啦啦啦啦~~~~~~";
+        	}
+        	txt.onmousemove=function(){
+        		txt.value="~_~...";
+        	}
+
+        	//onmouseleave/onmouseout鼠标离开事件
+        	txt.onmouseout=function(){
+        		txt.value="拜拜~~~~~~~~~~~";
+        	}
+
+       
+        }
+
+	</script>
+</head>
+<body>
+	<form action="" method="post">
+		
+		<input type="text"  name="uname" id="txt"></input>
+	</form>
+</body>
+</html>

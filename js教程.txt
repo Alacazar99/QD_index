@@ -1,0 +1,128 @@
+1.js教程
+JavaScript 是属于 HTML 和 Web 的编程语言。
+
+编程令计算机完成您需要它们做的工作。
+
+JavaScript 是 web 开发者必学的三种语言之一：
+
+HTML 定义网页的内容
+CSS 规定网页的布局
+JavaScript 对网页行为进行编程
+
+示例演示-
+
+2.js使用语法
+<script> 标签
+<head> 或 <body> 中的 JavaScript
+脚本可放置与外部文件中：
+
+3.js输出
+使用 window.alert() 写入警告框
+使用 document.write() 写入 HTML 输出
+使用 innerHTML /innerText 写入 HTML 元素
+使用 console.log() 写入浏览器控制台
+
+4.js注释
+
+单行注释
+单行注释以 // 开头
+
+多行注释
+多行注释以 /* 开头，以 */ 结尾。
+
+任何位于 /* 和 */ 之间的文本都会被 JavaScript 忽略
+
+
+5.js变量
+JavaScript 标识符
+所有 JavaScript 变量必须以唯一的名称的标识。
+
+这些唯一的名称称为标识符
+
+
+变量名称（唯一标识符）的通用规则是：
+
+名称可包含字母、数字、下划线和美元符号
+名称必须以字母开头
+名称也可以 $ 和 _ 开头（但是在本教程中我们不会这么做）
+名称对大小写敏感（y 和 Y 是不同的变量）
+保留字（比如 JavaScript 的关键词）无法用作变量名称
+
+提示：JavaScript 标识符对大小写敏感。
+
+typeof    获取变量类型
+
+
+6.js运算符
+
+a.算数运算符      parseInt():取整型数值
++	加法
+-	减法
+*	乘法
+/	除法
+%	系数
+++	递加
+--	递减
+
+b.JavaScript 赋值运算符
+=	x = y	x = y
++=	x += y	x = x + y
+-=	x -= y	x = x - y
+*=	x *= y	x = x * y
+/=	x /= y	x = x / y
+%=	x %= y	x = x % y
+
+c.JavaScript 比较运算符
+==	等于
+===	等值等型(强调类型是否相同)
+!=	不相等
+!==	不等值或不等型
+>	大于
+<	小于
+>=	大于或等于
+<=	小于或等于
+? :	三元运算符   if-else缩写
+
+d.JavaScript 逻辑运算符
+&&	逻辑与   注意：短路
+||	逻辑或
+!	逻辑非
+
+e.JavaScript 类型运算符
+
+typeof	返回变量的类型。
+instanceof	返回 true，如果对象是对象类型的实例
+
+7.js数据类型
+
+字符串值，数值，布尔值，数组，对象
+
+
+8.js属性操作
+js对象.属性   获取属性值
+js对象.属性=新值
+
+示例：img.src
+
+属性操作兼容性:
+8.1   div.style.fontSize
+
+8.2   div.className
+
+8.3   oDiv.style.float = 'right';
+	
+	  oDiv.style.styleFloat = 'right';		// IE 6,7,8
+	  oDiv.style.cssFloat = 'left';			// 非IE
+
+8.4  //获取css设置的属性值
+	 function getStyle(obj,attr)
+     {
+      if(obj.currentStyle)//IE6
+        return obj.currentStyle[attr];
+      else
+        return getComputedStyle(obj,false)[attr];
+     }
+ 
+
+
+

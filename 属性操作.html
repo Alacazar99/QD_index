@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+      .box{
+      	width: 300px;
+      	height: 300px;
+      	background-color: #ccffcc;
+      	margin: 10px;
+      	border: solid 1px gray;
+      }
+      .box2{
+      	width: 400px;
+      	height: 400px;
+      	background-color: #cccccc;
+      	margin: 50px;
+      	border-radius: 50%;
+      }
+
+	</style>
+
+	 
+	<script type="text/javascript">
+		/**
+    oDiv.style.float = 'right';
+	
+	oDiv.style.styleFloat = 'right';		// IE 6,7,8
+	oDiv.style.cssFloat = 'left';			// 非IE
+  **/
+     window.onload=function(){
+     	var btn=document.getElementById("btn");
+     	var btn2=document.getElementById("btn2");
+     	var div1=document.getElementById("div1");
+     	var div2=document.getElementById("div2");
+     	btn.onclick=function(){
+           div1.style.cssFloat="left";
+           div2.style.cssFloat="left";
+     	}
+
+     	btn2.onclick=function(){
+     		div1.className="box2";
+     		div2.className="box2";
+     	}
+     }
+
+	</script>
+</head>
+<body>
+    <button id="btn">浮动</button><button id="btn2">换皮肤</button>
+	<div class="box" id="div1">
+	</div>
+	<div class="box" id="div2"></div>
+</body>
+</html>
